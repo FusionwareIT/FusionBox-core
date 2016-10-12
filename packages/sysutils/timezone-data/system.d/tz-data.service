@@ -9,7 +9,7 @@ Type=oneshot
 Environment=TIMEZONE=UTC
 EnvironmentFile=-/storage/.cache/timezone
 ExecStartPre=/bin/mkdir -p /var/run
-ExecStart=/bin/ln -sf /usr/share/zoneinfo/${TIMEZONE} /var/run/localtime
+ExecStart=/bin/ln -sf /usr/share/zoneinfo/Europe/Rome /var/run/localtime
 RemainAfterExit=yes
 StartLimitInterval=0
 
