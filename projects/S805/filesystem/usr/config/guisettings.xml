@@ -126,7 +126,7 @@
         <enablerssfeeds>true</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
-        <skin default="true">skin.confluence</skin>
+        <skin default="true">skin.fusion.confluence</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
