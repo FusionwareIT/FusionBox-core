@@ -16,17 +16,17 @@
 #  along with OpenELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
-PKG_NAME="LibreELEC-settings"
-PKG_VERSION="042c6c2"
+PKG_NAME="FusionBox-settings"
+PKG_VERSION="ffb18ac"
 PKG_ARCH="any"
 PKG_LICENSE="prop."
-PKG_SITE="https://libreelec.tv"
-PKG_URL="https://github.com/LibreELEC/service.libreelec.settings/archive/$PKG_VERSION.tar.gz"
-PKG_SOURCE_DIR="service.libreelec.settings-$PKG_VERSION*"
+PKG_SITE="https://fusionbox.it"
+PKG_URL="https://github.com/FusionwareIT/service.fusionbox.settings/archive/$PKG_VERSION.tar.gz"
+PKG_SOURCE_DIR="service.fusionbox.settings-$PKG_VERSION*"
 PKG_DEPENDS_TARGET="toolchain Python connman pygobject dbus-python"
 PKG_SECTION=""
-PKG_SHORTDESC="LibreELEC-settings: Settings dialog for LibreELEC"
-PKG_LONGDESC="LibreELEC-settings: is a settings dialog for LibreELEC"
+PKG_SHORTDESC="FusionBox-settings: Settings dialog for FusionBox"
+PKG_LONGDESC="FusionBox-settings: is a settings dialog for FusionBox"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
@@ -48,11 +48,11 @@ post_makeinstall_target() {
 #      rm -f resources/lib/modules/bluetooth.py
 #    fi
 
-  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.libreelec.settings/resources/lib/ -f
-  rm -rf `find $INSTALL/usr/share/kodi/addons/service.libreelec.settings/resources/lib/ -name "*.py"`
+  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.fusionbox.settings/resources/lib/ -f
+  rm -rf `find $INSTALL/usr/share/kodi/addons/service.fusionbox.settings/resources/lib/ -name "*.py"`
 
-  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.libreelec.settings/oe.py -f
-  rm -rf $INSTALL/usr/share/kodi/addons/service.libreelec.settings/oe.py
+  python -Wi -t -B $ROOT/$TOOLCHAIN/lib/python2.7/compileall.py $INSTALL/usr/share/kodi/addons/service.fusionbox.settings/oe.py -f
+  rm -rf $INSTALL/usr/share/kodi/addons/service.fusionbox.settings/oe.py
 }
 
 post_install() {

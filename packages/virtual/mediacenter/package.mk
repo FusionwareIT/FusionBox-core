@@ -42,7 +42,7 @@ if [ "$MEDIACENTER" = "kodi" ]; then
                                           simplejson \
                                           pycrypto"
 # other packages
-  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET LibreELEC-settings \
+  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET FusionBox-settings \
                                           xmlstarlet \
                                           peripheral.joystick"
 fi

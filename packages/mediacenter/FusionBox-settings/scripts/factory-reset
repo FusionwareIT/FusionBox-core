@@ -19,7 +19,7 @@
 
 . /usr/lib/libreelec/functions
 
-# Get NAME, which is DISTRONAME, ie. LibreELEC
+# Get NAME, which is DISTRONAME, ie. FusionBox
 . /etc/os-release
 
 hidecursor
