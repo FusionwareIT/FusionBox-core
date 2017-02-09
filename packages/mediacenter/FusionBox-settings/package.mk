@@ -17,7 +17,7 @@
 ################################################################################
 
 PKG_NAME="FusionBox-settings"
-PKG_VERSION="ffb18ac"
+PKG_VERSION="7a9f1ba"
 PKG_ARCH="any"
 PKG_LICENSE="prop."
 PKG_SITE="https://fusionbox.it"

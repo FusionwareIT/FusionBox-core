@@ -769,7 +769,9 @@
     # remove temporary folder if exist from previous run
     rm -fr "$UPDATE_DIR/.tmp" &>/dev/null
 
-    echo "UPGRADE IN PROGRESS"
+## fusionbox ## translation
+
+    echo "AGGIORNAMENTO IN CORSO"
     echo ""
     echo "Please do not reboot or turn off your @DISTRONAME@ device!"
     echo ""
